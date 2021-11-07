@@ -1,0 +1,55 @@
+[{
+  "_id": 1,
+  "nombre": "nequi",
+  "numero": 111919,
+  "vencimiento": {
+    "$date": "2021-11-07T00:00:00Z"
+  },
+  "cvv": 1010,
+  "_class": "com.enbike2.enbike.models.Card"
+},{
+  "_id": 3,
+  "nombre": "bancolombia",
+  "numero": 123456789,
+  "vencimiento": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "cvv": 101010,
+  "_class": "com.enbike2.enbike.models.Card"
+},{
+  "_id": 4,
+  "nombre": "bancolombia",
+  "numero": 123456789,
+  "vencimiento": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "cvv": 101010,
+  "_class": "com.enbike2.enbike.models.Card"
+},{
+  "_id": 5,
+  "nombre": "bancolombia",
+  "numero": 123456789,
+  "vencimiento": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "cvv": 101010,
+  "_class": "com.enbike2.enbike.models.Card"
+},{
+  "_id": 6,
+  "nombre": "bancolombia",
+  "numero": 123456789,
+  "vencimiento": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "cvv": 101010,
+  "_class": "com.enbike2.enbike.models.Card"
+},{
+  "_id": 2,
+  "nombre": "bancolombia",
+  "numero": 123456789,
+  "vencimiento": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "cvv": 101010,
+  "_class": "com.enbike2.enbike.models.Card"
+}]

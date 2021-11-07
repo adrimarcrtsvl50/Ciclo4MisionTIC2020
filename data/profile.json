@@ -1,0 +1,61 @@
+[{
+  "_id": 1,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "tipodedocumento": "C.C",
+  "tipo": "administrador",
+  "contrasena": "123456",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+},{
+  "_id": 2,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "tipodedocumento": "C.C",
+  "tipo": "administrador",
+  "contrasena": "123456",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+},{
+  "_id": 3,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "tipodedocumento": "C.C",
+  "tipo": "administrador",
+  "contrasena": "123456",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+},{
+  "_id": 4,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "tipodedocumento": "C.C",
+  "tipo": "administrador",
+  "contrasena": "123456",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+},{
+  "_id": 6,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "tipodedocumento": "C.C",
+  "tipo": "administrador",
+  "contrasena": "123456",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+},{
+  "_id": 5,
+  "numid": "1023942975",
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes",
+  "tipodedocumento": "C.C",
+  "tipo": "cliente",
+  "contrasena": "98765",
+  "email": "adrimarcela50@hotmail.com",
+  "_class": "com.enbike2.enbike.models.Profile"
+}]

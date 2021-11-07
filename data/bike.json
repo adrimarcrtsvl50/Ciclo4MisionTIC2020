@@ -1,0 +1,73 @@
+[{
+  "_id": 1,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "m",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": 2,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "s",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": 3,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "l",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": 4,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "l",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": 5,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "l",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": 6,
+  "marca": "bxm",
+  "tipo": "montaña",
+  "tamano": "l",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "mantenimiento",
+  "modelo": "2012",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+}]

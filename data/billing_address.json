@@ -1,0 +1,61 @@
+[{
+  "_id": 1,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrimarcela50@hotmail.com",
+  "direccion": "diagonal 35 # 9a - 60sur",
+  "ciudad": "Bogota",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+},{
+  "_id": 2,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrimarcela50@hotmail.com",
+  "direccion": "diagonal 35 # 9a - 60sur",
+  "ciudad": "Bogota",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+},{
+  "_id": 3,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrimarcela50@hotmail.com",
+  "direccion": "diagonal 35 # 9a - 60sur",
+  "ciudad": "Bogota",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+},{
+  "_id": 4,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrimarcela50@hotmail.com",
+  "direccion": "diagonal 35 # 9a - 60sur",
+  "ciudad": "Bogota",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+},{
+  "_id": 6,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrimarcela50@hotmail.com",
+  "direccion": "diagonal 35 # 9a - 60sur",
+  "ciudad": "Bogota",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+},{
+  "_id": 5,
+  "nombre": "Adriana Marcela",
+  "apellido": "Cortes Vela",
+  "email": "adrianam-cortesv@unilibre.edu.co",
+  "direccion": "calle 50#9d-60",
+  "ciudad": "Bogotá",
+  "telefono": "3132181048",
+  "departamento": "D.C",
+  "_class": "com.enbike2.enbike.models.BillingAddress"
+}]

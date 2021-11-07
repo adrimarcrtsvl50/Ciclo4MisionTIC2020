@@ -1,0 +1,85 @@
+[{
+  "_id": 1,
+  "fechaInicial": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-06T00:00:00Z"
+  },
+  "duracionEstimada": 3,
+  "duracionReal": 8,
+  "_class": "com.enbike2.enbike.models.Rent"
+},{
+  "_id": 2,
+  "fechaInicial": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-06T00:00:00Z"
+  },
+  "duracionEstimada": 3,
+  "duracionReal": 8,
+  "_class": "com.enbike2.enbike.models.Rent"
+},{
+  "_id": 3,
+  "fechaInicial": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-06T00:00:00Z"
+  },
+  "duracionEstimada": 3,
+  "duracionReal": 8,
+  "_class": "com.enbike2.enbike.models.Rent"
+},{
+  "_id": 5,
+  "fechaInicial": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-06T00:00:00Z"
+  },
+  "duracionEstimada": 3,
+  "duracionReal": 8,
+  "_class": "com.enbike2.enbike.models.Rent"
+},{
+  "_id": 6,
+  "fechaInicial": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-05T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-06T00:00:00Z"
+  },
+  "duracionEstimada": 3,
+  "duracionReal": 8,
+  "_class": "com.enbike2.enbike.models.Rent"
+},{
+  "_id": 4,
+  "fechaInicial": {
+    "$date": "2021-11-12T00:00:00Z"
+  },
+  "fechaFinal": {
+    "$date": "2021-11-11T00:00:00Z"
+  },
+  "fechaEntrega": {
+    "$date": "2021-11-07T00:00:00Z"
+  },
+  "duracionEstimada": 2,
+  "duracionReal": 5,
+  "_class": "com.enbike2.enbike.models.Rent"
+}]
