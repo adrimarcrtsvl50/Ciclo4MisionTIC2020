@@ -13,7 +13,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="bike")
 public class Bike  {
     @Id
+   
     private Integer id;
+    
     private String marca;
     private String tipo;
     private String tamano;

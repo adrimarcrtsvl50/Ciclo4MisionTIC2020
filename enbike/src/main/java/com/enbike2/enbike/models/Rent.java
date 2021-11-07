@@ -6,7 +6,8 @@
 package com.enbike2.enbike.models;
 
 
-import java.sql.Date;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -19,8 +20,11 @@ public class Rent {
     
     @Id
     private Integer id;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date fechaInicial;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date fechaFinal;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date fechaEntrega;
     private Integer duracionEstimada;
     private Integer duracionReal;

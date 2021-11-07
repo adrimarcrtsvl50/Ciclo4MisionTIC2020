@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -50,6 +51,11 @@ public class PosController {
     @DeleteMapping("{id}")
     public void delete(@PathVariable Integer id) {
         posService.deleteById(id);
+    }
+    
+    @PutMapping ("/{id}")
+    public Pos modify(@PathVariable Integer id, @RequestBody Pos pos) {
+        return posService.save(pos);
     }
 
 }

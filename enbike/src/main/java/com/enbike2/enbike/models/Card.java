@@ -5,7 +5,9 @@
  */
 package com.enbike2.enbike.models;
 
-import java.sql.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -19,6 +21,7 @@ public class Card {
     private Integer id;
     private String nombre;
     private Integer numero;
+     @JsonFormat(pattern="yyyy-MM-dd")
     private Date vencimiento;
     private Integer cvv;
 

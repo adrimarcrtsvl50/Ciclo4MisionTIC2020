@@ -12,16 +12,27 @@ import org.springframework.data.mongodb.core.mapping.Document;
  *
  * @author adrim
  */
-@Document(collection="billing_address")
+@Document(collection = "billing_address")
 public class BillingAddress {
-     @Id
+
+    @Id
     private Integer id;
     private String nombre;
+    private String apellido;
+
     private String email;
     private String direccion;
     private String ciudad;
     private String telefono;
     private String departamento;
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
     public Integer getId() {
         return id;
