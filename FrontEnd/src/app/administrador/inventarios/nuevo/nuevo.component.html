@@ -1,0 +1,107 @@
+<br>
+<form (submit)="guardar()" ngNativeValidate>
+    <h1>Gestión de Inventarios - nuevo</h1>
+    <div id="registrar" class="tabcontent">
+        <div class="col-sm-12">
+            <div class="col-sm-12">
+                <p>Diligencie los campos a continuacion:</p>
+                <label> Imagen
+            <br>
+            <form>
+                <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg">
+                <div id="preview"></div>
+            </form>
+        </label>
+                <br>
+
+                <label> Precio
+        <br>
+        <input [(ngModel)]="m.precio" id="precio" name="descripcion" action="" autocomplete="off"
+        required="required">
+    </label>
+                <br>
+
+                <label> Marca
+            <br>
+            <input [(ngModel)]="m.marca" id="marca" name="marca" action="" autocomplete="off"
+                   required="required">
+        </label>
+                <br>
+
+                <label> Modelo
+            <br>
+            <input [(ngModel)]="m.modelo" id="modelo" name="tipo" action="" autocomplete="off"
+                   required="required">
+        </label>
+                <br>
+
+                <label>Género
+        <br>
+        <select [(ngModel)]="m.genero" id="genero" class="select-css1" name="genero"  required="required">                
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>                            <
+        </select>
+    </label>
+                <br>
+
+                <label> Color
+            <br>
+            <input [(ngModel)]="m.color" id="color" name="color" action="" autocomplete="off"
+                   required="required">
+        </label>
+                <br>
+
+                <label>Tipo
+            <br>
+            <select [(ngModel)]="m.tipo" id="tipo" class="select-css1" name="modelo" autocomplete="off" required="required">                
+                    <option value="montana">Montaña</option>
+                    <option value="urbano">Urbano</option> 
+                    <option value="ruta">Ruta</option> 
+                    <option value="hibridas">Híbridas</option>     
+                    <option value="plegables">plegables</option> 
+                    <option value="fixies">Fixies y single speed</option> 
+                    <option value="mbx">MBX</option>   
+                    <option value="cruisers">Cruisers</option>      
+                    <option value="fat">Fat Bikes</option>               
+                </select>
+        </label>
+                <br>
+
+                <label> Edad
+        <br>
+        <select [(ngModel)]="m.edad" id="edad1" class="select-css1" name="edad"  required="required">                
+            <option value="adulto">Adulto</option>
+            <option value="nino">Niño</option>                            
+        </select>
+    </label>
+                <br>
+
+                <label> Tamaño
+        <br>
+        <select [(ngModel)]="m.tamano"  id="tamano" class="select-css1" name="talla"  required="required">                
+            <option value="s">S</option>
+            <option value="m">M</option>  
+            <option value="l">L</option>                            
+        </select>
+    </label>
+                <br>
+
+                <label> Estado
+        <br>
+        <select [(ngModel)]="m.estado" id="estado" class="select-css1" name="estado"  required="required">                
+            <option value="disponible">Disponible</option>
+            <option value="prestamo">Prestamo</option>
+            <option value="mantenimiento">Mantenimiento</option>
+        </select>
+    </label>
+                <br>
+                <div style="text-align: center;">
+                    <button id="btn_Regis" class="btns" name="registrar" value="True" autofocus="autofocus" type="submit"> <i class="fas fa-save"></i> REGISTRAR</button> &nbsp;
+                    <button id="btn_Regis" class="btns" name="registrar" value="True" autofocus="autofocus" type="reset"> <i class="far fa-window-restore"></i> REESTABLECER</button> &nbsp;
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</form>

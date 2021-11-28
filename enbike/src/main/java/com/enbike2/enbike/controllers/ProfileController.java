@@ -39,7 +39,7 @@ public class ProfileController {
     }
  //procedimiento consultar por id
     @GetMapping("{id}")
-    public Optional<Profile> findById(@PathVariable Integer id) {
+    public Optional<Profile> findById(@PathVariable String id) {
         return profileService.findById(id);
     }
      //procedimiento guardar
@@ -49,12 +49,12 @@ public class ProfileController {
     }
  //procedimiento eliminar por id
     @DeleteMapping("{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         profileService.deleteById(id);
     }
     
     @PutMapping ("/{id}")
-    public Profile modify(@PathVariable Integer id, @RequestBody Profile profile) {
+    public Profile modify(@PathVariable String id, @RequestBody Profile profile) {
         return profileService.save(profile);
     }
 }

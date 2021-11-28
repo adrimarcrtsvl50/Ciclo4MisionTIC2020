@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author adrim
  */
 @Repository
-public interface CardRepository extends MongoRepository<Card, Integer> {
+public interface CardRepository extends MongoRepository<Card, String> {
     
 }

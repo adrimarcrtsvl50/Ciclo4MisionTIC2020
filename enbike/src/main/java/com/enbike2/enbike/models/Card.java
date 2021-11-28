@@ -8,6 +8,7 @@ package com.enbike2.enbike.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -18,18 +19,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="card")
 public class Card {
       @Id
-    private Integer id;
+     private String id;
     private String nombre;
     private Integer numero;
      @JsonFormat(pattern="yyyy-MM-dd")
     private Date vencimiento;
     private Integer cvv;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -40,17 +40,17 @@ public class BikeController {
     }
     //procedimiento consultar por id
     @GetMapping("/{id}")
-    public Optional<Bike> findById(@PathVariable Integer id) {
+    public Optional<Bike> findById(@PathVariable String id) {
         return bikeService.findById(id);
     }
     //procedimiento eliminar por id
      @DeleteMapping("/{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         bikeService.deleteById(id);
     }
     //procedimiento alctualizar por id
     @PutMapping ("/{id}")
-    public Bike modify(@PathVariable Integer id, @RequestBody Bike bike) {
+    public Bike modify(@PathVariable String id, @RequestBody Bike bike) {
         return bikeService.save(bike);
     }
 

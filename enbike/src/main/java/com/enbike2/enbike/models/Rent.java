@@ -8,6 +8,7 @@ package com.enbike2.enbike.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -19,7 +20,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Rent {
     
     @Id
-    private Integer id;
+     private String id;
     @JsonFormat(pattern="yyyy-MM-dd")
     private Date fechaInicial;
     @JsonFormat(pattern="yyyy-MM-dd")
@@ -29,11 +30,11 @@ public class Rent {
     private Integer duracionEstimada;
     private Integer duracionReal;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

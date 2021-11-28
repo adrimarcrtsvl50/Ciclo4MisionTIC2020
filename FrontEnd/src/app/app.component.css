@@ -1,0 +1,318 @@
+body {
+    background: #036;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'miFuente';
+    src: url(../assets/fonts/ferretfacebold.ttf);
+}
+
+@font-face {
+    font-family: 'miFuente3';
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+.caja {
+    display: block;
+    grid-template-areas: "header" "nav" "banner" "contenedor" "footer";
+}
+
+header {
+    grid-area: header;
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,cecece+43,cecece+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #cecece 43%, #cecece 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #cecece 43%, #cecece 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #cecece 43%, #cecece 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/*index*/
+
+.logo {
+    padding: 10px;
+}
+
+
+/*index*/
+
+.site-identity {
+    float: left;
+    width: 100%;
+    height: 115px;
+}
+
+
+/*index*/
+
+.site-identity p {
+    display: inline-block;
+    font-family: 'miFuente';
+    color: #1a2537;
+    font-size: 3.5em;
+    width: 79%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/*index*/
+
+.site-identity img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+/*index*/
+
+#menu-h {
+    grid-area: nav;
+    max-width: 1000px;
+    min-height: 90px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    background-color: lightgray;
+    border-color: rgb(180, 178, 178);
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #57a4d1;
+    transition: all .3s;
+}
+
+
+/* Submenu*/
+
+.submenu {
+    position: absolute;
+    background: #6a6b6a;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    font-family: 'miFuente3';
+    font-size: 20px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    text-align: left;
+}
+
+
+/*iniciarsesion*/
+
+.button {
+    background: #7f8c8d;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #aebbbb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header,
+.alert {
+    z-index: 100;
+}
+
+.hide {
+    display: none;
+}
+
+.remove {
+    display: none;
+}
+
+.conf {
+    display: none;
+}
+
+
+/*iniciarsesion*/
+
+.button:hover {
+    background: cadetblue;
+}
+
+
+/*iniciarsesion*/
+
+.button_for:hover {
+    background: cadetblue;
+}
+
+
+/*index*/
+
+#banner {
+    grid-area: banner;
+    max-width: 1000px;
+    min-height: 250px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+
+/*index*/
+
+#banner img {
+    max-width: 1000px;
+    min-height: 250px;
+}
+
+
+/*cabecera*/
+
+
+/*contenido*/
+
+
+/*body*/
+
+#contenedor {
+    grid-area: contenedor;
+    max-width: 1000px;
+    min-height: 700px;
+    margin: 0 auto;
+}
+
+
+/*body*/
+
+.contenedor {
+    width: 95%;
+    padding: 15px;
+    text-align: justify;
+    overflow: auto;
+}
+
+
+/*body*/
+
+.contenedor p {
+    font-family: 'miFuente3';
+    font-size: 20px;
+}
+
+
+/*body*/
+
+.contenedor a {
+    font-family: 'miFuente3';
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+/*iniciarsesion*/
+
+.formulario {
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+
+/*general*/
+
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+/*iniciarsesion*/
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+}
+
+
+/*iniciarsesion*/
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+
+/*iniciarsesion*/
+
+.select-doc {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    font-family: 'miFuente3';
+}
+
+
+/*contenido*/
+
+
+/*pie de pagina*/
+
+footer {
+    grid-area: footer;
+    max-width: 1000px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}

@@ -39,7 +39,7 @@ public class PosController {
     }
    //procedimiento consultar por id
     @GetMapping("/{id}")
-    public Optional<Pos> findById(@PathVariable Integer id) {
+    public Optional<Pos> findById(@PathVariable String id) {
         return posService.findById(id);
     }
        //procedimiento guardar
@@ -49,12 +49,12 @@ public class PosController {
     }
        //procedimiento eliminar por id
     @DeleteMapping("{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         posService.deleteById(id);
     }
     
     @PutMapping ("/{id}")
-    public Pos modify(@PathVariable Integer id, @RequestBody Pos pos) {
+    public Pos modify(@PathVariable String id, @RequestBody Pos pos) {
         return posService.save(pos);
     }
 

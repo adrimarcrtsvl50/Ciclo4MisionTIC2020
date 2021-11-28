@@ -39,7 +39,7 @@ public class BillingAddressController {
     }
      //procedimiento consultar por id
     @GetMapping("/{id}")
-    public Optional<BillingAddress> findById(@PathVariable Integer id) {
+    public Optional<BillingAddress> findById(@PathVariable String id) {
         return billingAddressService.findById(id);
     }
     //procedimiento guardar
@@ -49,12 +49,12 @@ public class BillingAddressController {
     }
     //procedimiento eliminar por id
     @DeleteMapping("{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         billingAddressService.deleteById(id);
     }
     
      @PutMapping ("/{id}")
-    public BillingAddress modify(@PathVariable Integer id, @RequestBody BillingAddress billingAddress) {
+    public BillingAddress modify(@PathVariable String id, @RequestBody BillingAddress billingAddress) {
         return billingAddressService.save(billingAddress);
     }
 }

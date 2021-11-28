@@ -40,7 +40,7 @@ public class CardController {
     }
  //procedimiento consultar por id
     @GetMapping("/{id}")
-    public Optional<Card> findById(@PathVariable Integer id) {
+    public Optional<Card> findById(@PathVariable String id) {
         return cardService.findById(id);
     }
      //procedimiento guardar
@@ -50,12 +50,12 @@ public class CardController {
     }
      //procedimiento eliminar por id
     @DeleteMapping("{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         cardService.deleteById(id);
     }
     
     @PutMapping ("/{id}")
-    public Card modify(@PathVariable Integer id, @RequestBody Card card) {
+    public Card modify(@PathVariable String id, @RequestBody Card card) {
         return cardService.save(card);
     }
 

@@ -1,0 +1,58 @@
+<div class="caja">
+    <header>
+        <section class="logo">
+            <div class="site-identity">
+                <a><img src="../assets/pictures/LOGO.png" alt="Site Name" /></a>
+                <p><a>enBike.com</a></p>
+            </div>
+        </section>
+    </header>
+
+    <nav id="menu-h">
+        <ul class="menu">
+            <li><a href="#">Sección de socios</a>
+                <ul class="submenu">
+                    <li><a href="../sites/index.html">Iniciar sesion</a></li>
+                    <li><a href="../sites/registrar.html">Registrarse</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="banner">
+        <img src="../assets/pictures/EBike_Banner.jpg" alt="banner">
+    </section>
+    <section id="contenedor">
+        <nav class="container-fluid bg-dark position-sticky top-0 ">
+            <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+                <li class="nav-item text-primary" role="presentation">
+                    <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" [routerLink]="['/home']">Home</a>
+                </li>
+                <li class="nav-item dropdown mt-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Inventarios
+                  </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" [routerLink]="['/consultar']">Consultar</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" [routerLink]="['/nuevo']">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-devoluciones-tab" data-bs-toggle="pill" data-bs-target="#pills-devoluciones" type="button" role="tab" aria-controls="pills-devoluciones" aria-selected="false" [routerLink]="['/devoluciones']">Gestión de Devoluciones</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <router-outlet> </router-outlet>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Derechos Reservados &copy; 2021 <br> Diseñado por: Adriana Cortes <br> Email: enBike@gmail.com
+    </footer>
+</div>

@@ -42,7 +42,7 @@ public class RentController {
     //procedimiento consultar por id
 
     @GetMapping("/{id}")
-    public Optional<Rent> findById(@PathVariable Integer id) {
+    public Optional<Rent> findById(@PathVariable String id) {
         return rentService.findById(id);
     }
     //procedimiento guardar
@@ -54,12 +54,12 @@ public class RentController {
     //procedimiento eliminar por id
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable String id) {
         rentService.deleteById(id);
     }
     
     @PutMapping ("/{id}")
-    public Rent modify(@PathVariable Integer id, @RequestBody Rent rent) {
+    public Rent modify(@PathVariable String id, @RequestBody Rent rent) {
         return rentService.save(rent);
     }
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.enbike2.enbike.models;
-
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,7 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class BillingAddress {
 
     @Id
-    private Integer id;
+     private String id;
     private String nombre;
     private String apellido;
 
@@ -34,11 +34,11 @@ public class BillingAddress {
         this.apellido = apellido;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

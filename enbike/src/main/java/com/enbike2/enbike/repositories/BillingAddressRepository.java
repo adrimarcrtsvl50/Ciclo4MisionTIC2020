@@ -15,6 +15,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface BillingAddressRepository extends MongoRepository<BillingAddress, Integer> {
+public interface BillingAddressRepository extends MongoRepository<BillingAddress, String> {
     
 }

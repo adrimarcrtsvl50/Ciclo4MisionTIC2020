@@ -5,6 +5,7 @@
  */
 package com.enbike2.enbike.models;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,7 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="profile")
 public class Profile {
      @Id
-    private Integer id;
+     private String id;
     private String numid;
     private String nombre;
     private String apellido;
@@ -24,11 +25,11 @@ public class Profile {
     private String contrasena;
     private String email;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

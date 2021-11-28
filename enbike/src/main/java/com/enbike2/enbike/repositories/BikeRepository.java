@@ -16,6 +16,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface BikeRepository extends MongoRepository<Bike, Integer> {
+public interface BikeRepository extends MongoRepository<Bike, String> {
     
 }
