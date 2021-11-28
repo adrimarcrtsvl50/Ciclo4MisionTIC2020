@@ -25,6 +25,6 @@ export class DevolucionesComponent implements OnInit {
   
   FormularioEditar(x:any):void{
     //alert(x);
-    this.rou.navigate(["/editar",x]);
+    this.rou.navigate(["menu/editar",x]);
   }
 }

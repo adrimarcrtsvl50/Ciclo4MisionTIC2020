@@ -53,7 +53,7 @@ export class EditarComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
-      this.rou.navigate(["/devoluciones"]);
+      this.rou.navigate(["/menu/devoluciones"]);
     });
   }
 }

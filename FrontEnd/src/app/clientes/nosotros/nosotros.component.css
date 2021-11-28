@@ -1,3 +1,5 @@
+/*nosotros*/
+
 h1 {
     text-align: center;
     color: #1a2537;
@@ -7,12 +9,14 @@ h1 {
 
 #txt_nosotros {
     font-size: 20px;
+    font-family: 'miFuente3';
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#imgbienvenidos {
-    width: 100%;
-    padding: 15px;
+#imgnosotros {
+    width: 320px;
+    height: 320px;
+    margin-left: 30%;
 }

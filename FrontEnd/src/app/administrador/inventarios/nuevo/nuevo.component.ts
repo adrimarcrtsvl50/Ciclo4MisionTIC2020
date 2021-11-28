@@ -40,7 +40,7 @@ export class NuevoComponent implements OnInit {
         timer: 1000
       })
 
-      this.rou.navigate(["/consultar"]);
+      this.rou.navigate(["/menu/consultar"]);
     });
   }
 

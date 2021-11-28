@@ -1,0 +1,117 @@
+<h1>GESTIÓN DE ALQUILAR</h1>
+<h2>Lista de productos</h2>
+<!--Lista de productos-->
+<table class="table table-striped table-hover">
+    <thead>
+        <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+
+<br>
+<!--Fechas de aquilar-->
+<div class="card1">
+    <label for="FechaI"><i class="fa fa-user"></i> Fecha de inicio</label>
+    <input type="Date" id="FechaI" onChange="fechasonIguales();" name="FechaI" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask required/>
+    <br>
+    <label for="FechaFin"><i class="fa fa-user"></i> Fecha de entrega</label>
+    <input type="Date" id="FechaFin" onChange="fechasonIguales();" name="FechaFin" data-inputmask="'alias': 'dd/mm/yyyy'" required/>
+    <br>
+</div>
+
+<!--Resumen productos seleccionados-->
+<p>Resumen productos seleccionados</p>
+<div class="row1">
+    <div class="col-75">
+        <div class="container2">
+            <form action="/action_page.php">
+                <div class="row1">
+                    <!--Direccion-->
+                    <div class="col-50 direcionfac">
+                        <div id="formularioDireccion">
+                            <h3>Dirección de facturación</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Nombre completo</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
+                            <input type="text" id="adr" name="address" placeholder="Carrera 123 # 45 -67" required>
+                            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                            <input type="text" id="city" name="city" placeholder="Bogotá" required>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">Departamento</label>
+                                    <input type="text" id="state" name="state" placeholder="Bogotá" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="telephone">Teléfono</label>
+                                    <input type="text" id="telephone" name="telephone" placeholder="6011234567" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Pago-->
+                    <div class="col-50">
+                        <div id="formularioPago">
+                            <h3>Pago</h3>
+                            <label for="fname">Tarjetas aceptadas</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Nombre en tarjeta</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                            <label for="ccnum">Número de tarjeta de crédito</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                            <label for="expmonth">Vencimiento</label>
+                            <input type="date" id="expmonth" name="expmonth" placeholder="DD/MM/AAAA" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="###" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn_Conf" class="btn btn-success btn-lg btn-block" name="Confirmar reserva" value="True" autofocus="autofocus" type="submit">Confirmar reserva</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container2 ">
+            <h4 class="">Carrito de compras <i class="fa fa-shopping-cart"></i> <span class="price " style="color:black"> </span>
+            </h4>
+            <div id="tbody1">
+
+            </div>
+            <hr>
+            <div id="tbodyfooter">
+                <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>$0</b></span></p>
+                <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
+                <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>$0</b></span></p>
+                <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>$0</b></span></p>
+                <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>$0</b></span></p>
+                <p>Total Final <span class="price itemCartTotal" style="color:black"><b>$0</b></span></p>
+            </div>
+        </div>
+        <template id="template-footer">
+             <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:rgb(163, 135, 135)"><b>$0</b></span></p>
+             <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
+             <p>Total <span  id="totaldias" class="price itemCartTotalDias" style="color:black"><b>$0</b></span></p>
+             <p>Multa <span  id="multa" class="price itemCartMulta" style="color:black"><b>$0</b></span></p>
+             <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>$0</b></span></p>
+             <p>Total Final <span id="total" class="price itemCartTotal" style="color:black"><b>$0</b></span></p>
+         </template>
+    </div>
+</div>
