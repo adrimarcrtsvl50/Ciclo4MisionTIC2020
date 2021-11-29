@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './administrador/menu/menu.component';
 import { LoginComponent } from './seccion/login/login.component';
 import { MenuCliComponent } from './clientes/menu-cli/menu-cli.component';
+import { RegisterComponent } from './seccion/register/register.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -28,6 +29,7 @@ const routes: Routes = [
       { path: 'contactanos', loadChildren: () => import('./clientes/contactanos/contactanos.module').then(m => m.ContactanosModule) },
     ]
   },
+  {path:"register", component:RegisterComponent},
 
 
 ];

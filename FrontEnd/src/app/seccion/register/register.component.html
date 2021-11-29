@@ -1,0 +1,95 @@
+<section class="vh-100 gradient-custom body">
+    <div class="container py-2 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100 body">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white body" style="border-radius: 1rem;">
+                    <div class="card-body p-2 text-center">
+                        <form id="formRegistrar">
+                            <div class="mb-md-5 mt-md-4 ">
+                                <h2 class="fw-bold mb-2 text-uppercase">Registrate</h2>
+                                <p>Por favor diligencie este formulario para registrar un nuevo usuario.</p>
+                                <form (submit)="Registrar()" ngNativeValidate>
+                                    <div class="container">
+
+                                        <div class="formulario__grupo" id="grupo__nombre">
+                                            <i class="fas fa-user"></i>
+                                            <label class="formulario__label" for="first_name"><b>Nombre</b></label>
+                                            <div class="formulario__grupo-input">
+                                                <input [(ngModel)]="m.nombre" class="formulario__input" id="name" type="text" placeholder="Introduzca su nombre" name="first_name" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo" id="grupo__apellido">
+                                            <i class="fas fa-user"></i>
+                                            <label class="formulario__label" for="last_name"><b>Apellido</b></label>
+                                            <div class="formulario__grupo-input">
+                                                <input [(ngModel)]="m.apellido" class="formulario__input" id="appellido" type="text" placeholder="Introduzca su apellido" name="last_name" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo" id="grupo__tipo">
+                                            <i class="fas fa-id-card"></i>
+                                            <label class="formulario__label" for="Tipo de documento"><b>Tipo de documento</b></label>
+                                            <br>
+                                            <div id="documento" class="input-contenedor">
+                                                <select [(ngModel)]="m.tipodedocumento" id="tipodoc" name="Tipo de documento" class="select-doc" required>
+                                                    <option disabled selected>Selecciona tipo de documento</option>
+                                                    <option value="CC">CEDULA DE CIUDADANIA</option>
+                                                    <option value="PA">PASAPORTE</option>
+                                                    <option value="TI">TARJETA DE IDENTIDAD</option>
+                                                    <option value="CE">CEDULA DE EXTRANJERIA</option>                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo" id="grupo__id">
+                                            <i class="fas fa-id-card"></i>
+                                            <label class="formulario__label" for="id"><b>ID</b></label>
+                                            <div class="formulario__grupo-input">
+                                                <input [(ngModel)]="m.numid" class="formulario__input" id="numid" type="text" placeholder="Introduzca su número de identificación" name="id" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo" id="grupo__email">
+                                            <i class="fas fa-envelope"></i>
+                                            <label class="formulario__label" for="email"><b>Email</b></label>
+                                            <div class="formulario__grupo-input">
+                                                <input [(ngModel)]="m.email" class="formulario__input" id="email" type="email" placeholder="Introduzca su Email" name="email" required>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="formulario__grupo" id="grupo__tipo">
+                                            <i class="fas fa-users"></i>
+                                            <label class="formulario__label" for="tipe_user"><b>Tipo de usuario</b></label>
+                                            <br>
+                                            <div id="tipe_user" class="input-contenedor">
+                                                <select [(ngModel)]="m.tipo" id="tipous" name="tipe_user" class="select-doc" required>
+                                                    <option value="admin">Administrador</option>
+                                                    <option value="client">Cliente</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo" id="grupo__password">
+                                            <i class="fas fa-key"></i>
+                                            <label class="formulario__label" for="psw"><b>Contraseña</b></label>
+                                            <div class="formulario__grupo-input">
+                                                <input [(ngModel)]="m.contrasena" class="formulario__input" id="password" type="password" placeholder="Introduzca su contraseña" name="password" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                            <button type="submit" id="btn_reg" class="button_for">Enviar</button>
+                                        </div>
+                                        <p class="form_link">¿Ya tiene una cuenta? <a [routerLink]="['/login']">Ingresa aqui</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

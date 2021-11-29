@@ -1,11 +1,11 @@
-<section class="vh-100 gradient-custom">
+<section class="vh-100 gradient-custom body">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                 <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                    <div class="card-body p-5 text-center">
+                    <div class="card-body p-2 text-center">
                         <form id="formInciar" (submit)="Iniciar()" ngNativeValidate>
-                            <div class="mb-md-5 mt-md-4 pb-5">
+                            <div class="mb-md-5 mt-md-4 ">
                                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                 <p class="text-white-50 mb-5">Please enter your login and password!</p>
 
@@ -15,30 +15,18 @@
                                         <label class="formulario__label" for="email"><b> Correo</b></label>
                                         <div class="formulario__grupo-input">
                                             <input [(ngModel)]="m.email" class="formulario__input" id="email" type="email" placeholder="Introduzca su Correo" name="email" required>
-                                            <i class="formulario__validacion-estado formulario__validacion-estado-email fas fa-times-circle"></i>
-                                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                                         </div>
                                     </div>
-                                    <br>
-
                                     <br>
                                     <div class="formulario__grupo" id="grupo__password">
                                         <i class="fas fa-key"></i>
                                         <label class="formulario__label" for="psw"><b> Contraseña</b></label>
                                         <div class="formulario__grupo-input">
                                             <input [(ngModel)]="m.contra" class="formulario__input" id="password" type="password" placeholder="Introduzca su contraseña" name="password" required>
-                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                            <p class="formulario__input-error">la contraseña tiene que ser de 4 a 12 digitos</p>
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="formulario__mensaje" id="formulario__mensaje">
-                                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                                    </div>
-                                    <div class="formulario__grupo formulario__grupo-btn-enviar">
-                                        <button type="submit" id="btn_reg" class="button_for">Iniciar sesion</button>
-                                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                                    </div>
+                                    <button type="submit" id="btn_reg" class="button_for">Iniciar sesion</button>
                                 </div>
                             </div>
                         </form>
