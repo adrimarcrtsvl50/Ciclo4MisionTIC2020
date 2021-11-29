@@ -1,61 +1,73 @@
 [{
-  "_id": 1,
+  "_id": {
+    "$oid": "61a3b53d3db7fc14dff0d6d6"
+  },
   "numid": "1023942975",
   "nombre": "Adriana Marcela",
-  "apellido": "Cortes Vela",
+  "apellido": "Cortes  Vela",
   "tipodedocumento": "C.C",
-  "tipo": "administrador",
+  "tipo": "admin",
   "contrasena": "123456",
   "email": "adrimarcela50@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 },{
-  "_id": 2,
+  "_id": {
+    "$oid": "61a3b6e93db7fc14dff0d6d7"
+  },
   "numid": "1023942975",
-  "nombre": "Adriana Marcela",
-  "apellido": "Cortes Vela",
+  "nombre": "Luis",
+  "apellido": "Sanchez",
   "tipodedocumento": "C.C",
-  "tipo": "administrador",
-  "contrasena": "123456",
+  "tipo": "client",
+  "contrasena": "12345",
   "email": "adrimarcela50@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 },{
-  "_id": 3,
-  "numid": "1023942975",
-  "nombre": "Adriana Marcela",
-  "apellido": "Cortes Vela",
-  "tipodedocumento": "C.C",
-  "tipo": "administrador",
-  "contrasena": "123456",
-  "email": "adrimarcela50@hotmail.com",
+  "_id": {
+    "$oid": "61a4fb2aac5fa70c057bc9b0"
+  },
+  "numid": "12345678",
+  "nombre": "juan carlos",
+  "apellido": "perez",
+  "tipodedocumento": "c.c",
+  "tipo": "client",
+  "contrasena": "12345678",
+  "email": "juansanca@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 },{
-  "_id": 4,
-  "numid": "1023942975",
-  "nombre": "Adriana Marcela",
-  "apellido": "Cortes Vela",
-  "tipodedocumento": "C.C",
-  "tipo": "administrador",
-  "contrasena": "123456",
-  "email": "adrimarcela50@hotmail.com",
+  "_id": {
+    "$oid": "61a4fb33ac5fa70c057bc9b1"
+  },
+  "numid": "12345678",
+  "nombre": "juan carlos",
+  "apellido": "perez",
+  "tipodedocumento": "c.c",
+  "tipo": "client",
+  "contrasena": "12345678",
+  "email": "juca@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 },{
-  "_id": 6,
-  "numid": "1023942975",
-  "nombre": "Adriana Marcela",
-  "apellido": "Cortes Vela",
-  "tipodedocumento": "C.C",
-  "tipo": "administrador",
-  "contrasena": "123456",
-  "email": "adrimarcela50@hotmail.com",
+  "_id": {
+    "$oid": "61a4fb39ac5fa70c057bc9b2"
+  },
+  "numid": "12345678",
+  "nombre": "juan carlos",
+  "apellido": "perez",
+  "tipodedocumento": "c.c",
+  "tipo": "client",
+  "contrasena": "12345678",
+  "email": "jucar@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 },{
-  "_id": 5,
-  "numid": "1023942975",
-  "nombre": "Adriana Marcela",
-  "apellido": "Cortes",
-  "tipodedocumento": "C.C",
-  "tipo": "cliente",
-  "contrasena": "98765",
-  "email": "adrimarcela50@hotmail.com",
+  "_id": {
+    "$oid": "61a4fb3eac5fa70c057bc9b3"
+  },
+  "numid": "12345678",
+  "nombre": "juan carlos",
+  "apellido": "perez",
+  "tipodedocumento": "c.c",
+  "tipo": "client",
+  "contrasena": "12345678",
+  "email": "jucarlos@hotmail.com",
   "_class": "com.enbike2.enbike.models.Profile"
 }]

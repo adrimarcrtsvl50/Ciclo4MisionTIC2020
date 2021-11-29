@@ -1,43 +1,46 @@
 [{
-  "_id": 1,
-  "SubTotal": 5000,
-  "multa": 2000,
-  "iva": 1000,
-  "total": 8000,
-  "_class": "com.enbike2.enbike.models.Pos"
-},{
-  "_id": 2,
-  "SubTotal": 5000,
-  "multa": 2000,
-  "iva": 1000,
-  "total": 8000,
-  "_class": "com.enbike2.enbike.models.Pos"
-},{
-  "_id": 4,
-  "SubTotal": 5000,
-  "multa": 2000,
-  "iva": 1000,
-  "total": 8000,
-  "_class": "com.enbike2.enbike.models.Pos"
-},{
-  "_id": 5,
-  "SubTotal": 5000,
-  "multa": 2000,
-  "iva": 1000,
-  "total": 8000,
-  "_class": "com.enbike2.enbike.models.Pos"
-},{
-  "_id": 6,
-  "SubTotal": 5000,
-  "multa": 2000,
-  "iva": 1000,
-  "total": 8000,
-  "_class": "com.enbike2.enbike.models.Pos"
-},{
-  "_id": 3,
+  "_id": {
+    "$oid": "61a4faa4ac5fa70c057bc9ab"
+  },
   "SubTotal": 10000,
   "multa": 0,
   "iva": 10000,
   "total": 10000,
+  "_class": "com.enbike2.enbike.models.Pos"
+},{
+  "_id": {
+    "$oid": "61a4faa5ac5fa70c057bc9ac"
+  },
+  "SubTotal": 10000,
+  "multa": 0,
+  "iva": 10000,
+  "total": 10000,
+  "_class": "com.enbike2.enbike.models.Pos"
+},{
+  "_id": {
+    "$oid": "61a4faafac5fa70c057bc9ad"
+  },
+  "SubTotal": 12000,
+  "multa": 20,
+  "iva": 20000,
+  "total": 12000,
+  "_class": "com.enbike2.enbike.models.Pos"
+},{
+  "_id": {
+    "$oid": "61a4fac6ac5fa70c057bc9ae"
+  },
+  "SubTotal": 32000,
+  "multa": 30,
+  "iva": 30000,
+  "total": 32000,
+  "_class": "com.enbike2.enbike.models.Pos"
+},{
+  "_id": {
+    "$oid": "61a4fad2ac5fa70c057bc9af"
+  },
+  "SubTotal": 42000,
+  "multa": 40,
+  "iva": 40000,
+  "total": 42000,
   "_class": "com.enbike2.enbike.models.Pos"
 }]

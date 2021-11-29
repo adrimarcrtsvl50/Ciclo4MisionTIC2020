@@ -1,73 +1,155 @@
 [{
-  "_id": 1,
-  "marca": "bxm",
-  "tipo": "montaña",
+  "_id": {
+    "$oid": "61993ad6f85fe6001f6528a1"
+  },
+  "marca": "bxs",
+  "tipo": "plegables",
+  "tamano": "l",
+  "genero": "masculino",
+  "color": "blanco",
+  "estado": "prestamo",
+  "modelo": "2021",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": {
+    "$oid": "61993ad7f85fe6001f6528a2"
+  },
+  "marca": "bxs",
+  "tipo": "hibridas",
+  "tamano": "l",
+  "genero": "femenino",
+  "color": "blanco",
+  "estado": "disponible",
+  "modelo": "2021",
+  "precio": 10000,
+  "edad": "adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": {
+    "$oid": "61993ad8f85fe6001f6528a3"
+  },
+  "marca": "bxs",
+  "tipo": "Montaña",
+  "tamano": "l",
+  "genero": "Femenino",
+  "color": "blanco",
+  "estado": "Mantenimiento",
+  "modelo": "2021",
+  "precio": 10000,
+  "edad": "Adulto",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": {
+    "$oid": "61994d81f85fe6001f6528a5"
+  },
+  "marca": "ccc",
+  "tipo": "fixies",
   "tamano": "m",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
-  "edad": "adulto",
+  "color": "ddd",
+  "estado": "prestamo",
+  "modelo": "222",
+  "precio": 1111,
+  "edad": "nino",
   "_class": "com.enbike2.enbike.models.Bike"
 },{
-  "_id": 2,
-  "marca": "bxm",
-  "tipo": "montaña",
+  "_id": {
+    "$oid": "619aa0a8f85fe6001f6528a8"
+  },
+  "marca": "caxc",
+  "tipo": "plegables",
+  "tamano": "m",
+  "genero": "masculino",
+  "color": "cxc",
+  "estado": "prestamo",
+  "modelo": "xzcx",
+  "precio": 1111,
+  "edad": "nino",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": {
+    "$oid": "619aa11bf85fe6001f6528a9"
+  },
+  "marca": "fdv",
+  "tipo": "ruta",
   "tamano": "s",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
+  "color": "c vxcd",
+  "estado": "disponible",
+  "modelo": "cvc",
+  "precio": 544,
   "edad": "adulto",
   "_class": "com.enbike2.enbike.models.Bike"
 },{
-  "_id": 3,
-  "marca": "bxm",
-  "tipo": "montaña",
-  "tamano": "l",
+  "_id": {
+    "$oid": "619aa16ff85fe6001f6528aa"
+  },
+  "marca": "cdc",
+  "tipo": "montana",
+  "tamano": "s",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
+  "color": "ccc",
+  "estado": "prestamo",
+  "modelo": "ccc",
+  "precio": 444,
   "edad": "adulto",
   "_class": "com.enbike2.enbike.models.Bike"
 },{
-  "_id": 4,
-  "marca": "bxm",
-  "tipo": "montaña",
-  "tamano": "l",
+  "_id": {
+    "$oid": "619aa476f85fe6001f6528ab"
+  },
+  "marca": "ddd",
+  "tipo": "urbano",
+  "tamano": "s",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
-  "edad": "adulto",
+  "color": "ddd",
+  "estado": "disponible",
+  "modelo": "dd",
+  "precio": 332,
+  "edad": "nino",
   "_class": "com.enbike2.enbike.models.Bike"
 },{
-  "_id": 5,
-  "marca": "bxm",
-  "tipo": "montaña",
-  "tamano": "l",
+  "_id": {
+    "$oid": "61a3e96dad1d811c5562a02a"
+  },
+  "marca": "fff",
+  "tipo": "mbx",
+  "tamano": "m",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
-  "edad": "adulto",
+  "color": "fff",
+  "estado": "prestamo",
+  "modelo": "ffff",
+  "precio": 2222,
+  "edad": "nino",
   "_class": "com.enbike2.enbike.models.Bike"
 },{
-  "_id": 6,
-  "marca": "bxm",
-  "tipo": "montaña",
-  "tamano": "l",
+  "_id": {
+    "$oid": "61a3e975ad1d811c5562a02b"
+  },
+  "marca": "fff",
+  "tipo": "mbx",
+  "tamano": "m",
   "genero": "femenino",
-  "color": "blanco",
-  "estado": "mantenimiento",
-  "modelo": "2012",
-  "precio": 10000,
-  "edad": "adulto",
+  "color": "fff",
+  "estado": "prestamo",
+  "modelo": "ffff",
+  "precio": 2222,
+  "edad": "nino",
+  "_class": "com.enbike2.enbike.models.Bike"
+},{
+  "_id": {
+    "$oid": "61a3ea07ad1d811c5562a02c"
+  },
+  "marca": "65",
+  "tipo": "mbx",
+  "tamano": "m",
+  "genero": "masculino",
+  "color": "gg",
+  "estado": "disponible",
+  "modelo": "66",
+  "precio": 56,
+  "edad": "nino",
   "_class": "com.enbike2.enbike.models.Bike"
 }]
