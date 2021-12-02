@@ -24,7 +24,7 @@ const routes: Routes = [
     children: [
       { path: 'homecli', loadChildren: () => import('./clientes/homecli/homecli.module').then(m => m.HomecliModule) },
       { path: 'producto', loadChildren: () => import('./clientes/producto/producto.module').then(m => m.ProductoModule) },
-      { path: 'carrito/:X', loadChildren: () => import('./clientes/carrito/carrito.module').then(m => m.CarritoModule) },
+      { path: 'carrito', loadChildren: () => import('./clientes/carrito/carrito.module').then(m => m.CarritoModule) },
       { path: 'nosotros', loadChildren: () => import('./clientes/nosotros/nosotros.module').then(m => m.NosotrosModule) },
       { path: 'contactanos', loadChildren: () => import('./clientes/contactanos/contactanos.module').then(m => m.ContactanosModule) },
     ]

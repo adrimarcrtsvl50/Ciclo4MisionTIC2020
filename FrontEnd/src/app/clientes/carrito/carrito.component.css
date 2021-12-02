@@ -1,5 +1,12 @@
 /*carrito*/
 
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+    padding: 10px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -104,6 +111,14 @@ tr:nth-child(even) {
 }
 
 input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type=date] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;

@@ -24,6 +24,7 @@ export class ProductoComponent implements OnInit {
         this.infoConsulta = Res;
       });
   }
+  
   button_add(x:any):void{
     this.http.get("http://localhost:8081/bikes", { responseType: "json" })
       .subscribe((Res: any) => {
@@ -33,7 +34,7 @@ export class ProductoComponent implements OnInit {
             Swal.fire("El estado de la Bicicleta", "la bicicleta se encuentra en mantenimiento o prestada.", "error");
            }else{
             if(m.estado==="disponible"){
-            this.rou.navigate(["menu-cli/carrito",x]);
+           // this.rou.navigate(["menu-cli/carrito",x]);
             }
            }
          }
