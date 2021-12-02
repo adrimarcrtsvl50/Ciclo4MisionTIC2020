@@ -29,12 +29,12 @@ export class ProductoComponent implements OnInit {
 
   addCarrito(x:any){
     const m = this.infoConsulta;
-
+    const cantidad=1;
     if (m.estado === "prestamo" || m.estado === "mantenimiento") {
       Swal.fire("El estado de la Bicicleta", "la bicicleta se encuentra en mantenimiento o prestada.", "error");
     } else {
       this.carrito.addCarriro(x);
-      window.alert("producto adicionado con el id" + x)
+      window.alert("producto adicionado con el id" + x.id)
 
     }
   }

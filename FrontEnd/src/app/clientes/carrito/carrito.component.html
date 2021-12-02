@@ -21,11 +21,11 @@
             </td>
             <td class="table_precio">$<span>{{x.precio}}</span></td>
             <td class="table_tamano">{{x.tamano}}</td>
-            <td class="table_cantidad">1</td>
+            <td class="table_cantidad">{{x.cantidad}}</td>
             <td class="tabla_botones">
                 <!--<button class="btn btn-info sumar">+</button>-->
                 <!--<button class="btn btn-success disminuir">-</button>-->
-                <button class="delete btn btn-danger">x</button>
+                <button class="delete btn btn-danger" routerLink="/">x</button>
             </td>
         </tr>
     </tbody>
@@ -35,10 +35,10 @@
 <!--Fechas de aquilar-->
 <div class="card1">
     <label for="FechaI"><i class="fa fa-user"></i> Fecha de inicio</label>
-    <input type="Date" id="FechaI" onChange="fechasonIguales();" name="FechaI" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask required/>
+    <input type="Date" id="FechaI" name="FechaI" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask required/>
     <br>
     <label for="FechaFin"><i class="fa fa-user"></i> Fecha de entrega</label>
-    <input type="Date" id="FechaFin" onChange="fechasonIguales();" name="FechaFin" data-inputmask="'alias': 'dd/mm/yyyy'" required/>
+    <input type="Date" id="FechaFin" name="FechaFin" data-inputmask="'alias': 'dd/mm/yyyy'" required/>
     <br>
 </div>
 

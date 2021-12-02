@@ -1,3 +1,4 @@
+import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 import { Component, OnInit } from '@angular/core';
 import { CarritoSevice } from '../services/carrito.service';
 @Component({
@@ -6,12 +7,17 @@ import { CarritoSevice } from '../services/carrito.service';
   styleUrls: ['./carrito.component.css']
 })
 export class CarritoComponent implements OnInit {
-  items : any[] = [];
+  items: any =  [];
+  
   constructor( private  carrito: CarritoSevice) { }
 
   ngOnInit(): void {
     this.items= this.carrito.ListarCarrito();
     console.log(this.items)
+    
   }
-
+  
 }
+
+
+

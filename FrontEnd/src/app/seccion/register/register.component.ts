@@ -10,7 +10,6 @@ declare const Swal:any;
 })
 export class RegisterComponent implements OnInit {
   m:any = {
-    
     nombre: "",
     apellido: "",
     tipodedocumento: "",
