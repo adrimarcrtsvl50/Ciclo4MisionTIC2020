@@ -12,7 +12,23 @@
             <th scope="col">Acción</th>
         </tr>
     </thead>
-    <tbody id="tbody"></tbody>
+    <tbody id="tbody">
+        <tr *ngFor="let x of items">
+            <th scope="row">1</th>
+            <td class="table_productos">
+                <img src="assets/pictures/bicicleta montaña/ima1.jpg" alt="">
+                <h6 class="title">{{x.marca}}</h6>
+            </td>
+            <td class="table_precio">$<span>{{x.precio}}</span></td>
+            <td class="table_tamano">{{x.tamano}}</td>
+            <td class="table_cantidad">1</td>
+            <td class="tabla_botones">
+                <!--<button class="btn btn-info sumar">+</button>-->
+                <!--<button class="btn btn-success disminuir">-</button>-->
+                <button class="delete btn btn-danger">x</button>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 <br>

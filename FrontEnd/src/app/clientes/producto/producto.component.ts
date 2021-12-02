@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { CarritoSevice } from '../services/carrito.service';
 
 
-declare const Swal:any;
+declare const Swal: any;
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
@@ -11,7 +12,8 @@ declare const Swal:any;
 })
 export class ProductoComponent implements OnInit {
   infoConsulta: any;
-  constructor(private rou:Router,private http: HttpClient) { }
+  
+  constructor(public carrito: CarritoSevice ,private rou: Router, private http: HttpClient) { }
   ngOnInit(): void {
     this.listar();
 
@@ -24,22 +26,18 @@ export class ProductoComponent implements OnInit {
         this.infoConsulta = Res;
       });
   }
-  
-  button_add(x:any):void{
-    this.http.get("http://localhost:8081/bikes", { responseType: "json" })
-      .subscribe((Res: any) => {
-        console.log(Res);
-         for(var m of Res ){
-           if(m.estado==="prestamo" || m.estado === "mantenimiento"){
-            Swal.fire("El estado de la Bicicleta", "la bicicleta se encuentra en mantenimiento o prestada.", "error");
-           }else{
-            if(m.estado==="disponible"){
-           // this.rou.navigate(["menu-cli/carrito",x]);
-            }
-           }
-         }
-      });
+
+  addCarrito(x:any){
+    const m = this.infoConsulta;
+
+    if (m.estado === "prestamo" || m.estado === "mantenimiento") {
+      Swal.fire("El estado de la Bicicleta", "la bicicleta se encuentra en mantenimiento o prestada.", "error");
+    } else {
+      this.carrito.addCarriro(x);
+      window.alert("producto adicionado con el id" + x)
+
+    }
   }
-   
-  
+
+
 }
