@@ -112,22 +112,16 @@
 
             </div>
             <hr>
-            <div id="tbodyfooter">
-                <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>$0</b></span></p>
-                <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
-                <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>$0</b></span></p>
-                <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>$0</b></span></p>
-                <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>$0</b></span></p>
-                <p>Total Final <span class="price itemCartTotal" style="color:black"><b>$0</b></span></p>
-            </div>
+            <form *ngFor="let x of total">
+                <div id="tbodyfooter">
+                    <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>${{x.subtotal}}</b></span></p>
+                    <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
+                    <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>${{x.subtotal}}</b></span></p>
+                    <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>${{x.multa}}</b></span></p>
+                    <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>${{x.iva}}</b></span></p>
+                    <p>Total Final <span class="price itemCartTotal" style="color:black"><b>${{x.totales}}</b></span></p>
+                </div>
+            </form>
         </div>
-        <template id="template-footer">
-             <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:rgb(163, 135, 135)"><b>$0</b></span></p>
-             <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
-             <p>Total <span  id="totaldias" class="price itemCartTotalDias" style="color:black"><b>$0</b></span></p>
-             <p>Multa <span  id="multa" class="price itemCartMulta" style="color:black"><b>$0</b></span></p>
-             <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>$0</b></span></p>
-             <p>Total Final <span id="total" class="price itemCartTotal" style="color:black"><b>$0</b></span></p>
-         </template>
     </div>
 </div>
