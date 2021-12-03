@@ -11,7 +11,12 @@ declare const Swal: any;
 })
 export class CarritoComponent implements OnInit {
   items: any =  [];
-  total:any = [];
+  total:any = {
+    Subtotal:"",
+    Iva:"",
+    Multa:"",
+    Total:""
+  };
   constructor( private  carrito: CarritoSevice,private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -26,21 +31,18 @@ export class CarritoComponent implements OnInit {
     console.log(x)
   }
   carroTotal() {
-    this.total = [];
+    let total = 0;
     this.items.forEach((item: any) => {
-        let  SubTotal =   item.precio * item.cantidad
-        let Iva = SubTotal * 0.19
-        let Multa = SubTotal * 0.10
-        let Total = SubTotal + Iva + Multa  
-        const newItem = {
-            subtotal: SubTotal,
-            iva :Iva,
-            multa : Multa,
-            totales:Total
-        }
-        this.total.push(newItem)
+      total = total + item.precio * item.cantidad;
+          
+       // console.log("subtotal1",this.total.Subtotal,"precio", item.precio, "cantidad",item.cantidad) 
     })
-   
+
+    this.total.Subtotal = total
+    this.total.Iva=Math.round(total*0.19);
+    this.total.Multa = Math.round(total*0.10);
+    this.total.Total= total + this.total.Iva + this.total.Multa;
+   console.log("subtotal",total)
 }
 
   

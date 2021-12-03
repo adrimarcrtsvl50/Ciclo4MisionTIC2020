@@ -55,21 +55,6 @@ export class CarritoSevice {
         return this.items;
 
     }
-    carroTotal() {
-        this.items.forEach((item: any) => {
-            let  SubTotal =   item.precio * item.cantidad
-            let Iva = SubTotal * 0.19
-            let Multa = SubTotal * 0.10
-            let Total = SubTotal + Iva + Multa  
-            const newItem = {
-                subtotal: SubTotal,
-                iva :Iva,
-                multa : Multa,
-                totales:Total
-            }
-            
-        })
-       
-    }
+   
     
 }

@@ -112,14 +112,14 @@
 
             </div>
             <hr>
-            <form *ngFor="let x of total">
+            <form>
                 <div id="tbodyfooter">
-                    <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>${{x.subtotal}}</b></span></p>
+                    <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>${{total.Subtotal}}</b></span></p>
                     <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
-                    <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>${{x.subtotal}}</b></span></p>
-                    <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>${{x.multa}}</b></span></p>
-                    <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>${{x.iva}}</b></span></p>
-                    <p>Total Final <span class="price itemCartTotal" style="color:black"><b>${{x.totales}}</b></span></p>
+                    <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>${{total.Subtotal}}</b></span></p>
+                    <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>${{total.Multa}}</b></span></p>
+                    <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>${{total.Iva}}</b></span></p>
+                    <p>Total Final <span class="price itemCartTotal" style="color:black"><b>${{total.Total}}</b></span></p>
                 </div>
             </form>
         </div>
