@@ -16,8 +16,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     HomecliRoutingModule,
     FormsModule,
-    BrowserModule,
-    HttpClientModule
+    
   ]
 })
 export class HomecliModule { }

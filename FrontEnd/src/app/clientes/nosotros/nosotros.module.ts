@@ -16,8 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     NosotrosRoutingModule,
     FormsModule,
-    BrowserModule,
-    HttpClientModule
+    
   ]
 })
 export class NosotrosModule { }
