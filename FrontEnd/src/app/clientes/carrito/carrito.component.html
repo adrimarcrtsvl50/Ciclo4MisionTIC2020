@@ -35,10 +35,10 @@
 <!--Fechas de aquilar-->
 <div class="card1">
     <label for="FechaI"><i class="fa fa-user"></i> Fecha de inicio</label>
-    <input type="Date" id="FechaI" name="FechaI" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask required/>
+    <input [(ngModel)]="s.fechaInicial" type="Date" id="FechaI" name="FechaI" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask required/>
     <br>
     <label for="FechaFin"><i class="fa fa-user"></i> Fecha de entrega</label>
-    <input type="Date" id="FechaFin" name="FechaFin" data-inputmask="'alias': 'dd/mm/yyyy'" required/>
+    <input [(ngModel)]="s.fechaFinal" [(ngModel)]="s.fechaEntrega" type="Date" id="FechaFin" name="FechaFin" data-inputmask="'alias': 'dd/mm/yyyy'" required/>
     <br>
 </div>
 
@@ -47,29 +47,32 @@
 <div class="row1">
     <div class="col-75">
         <div class="container2">
-            <form action="/action_page.php">
+            <form (submit)="Guardar()" ngNativeValidate action="/action_page.php">
                 <div class="row1">
+
                     <!--Direccion-->
                     <div class="col-50 direcionfac">
                         <div id="formularioDireccion">
                             <h3>Dirección de facturación</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Nombre completo</label>
-                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+                            <label for="fname"><i class="fa fa-user"></i> Nombre</label>
+                            <input [(ngModel)]="m.nombre" type="text" id="fname" name="firstname" placeholder="John M" required>
+                            <label for="fape"><i class="fa fa-user"></i> Apellido</label>
+                            <input [(ngModel)]="m.apellido" type="text" id="fape" name="firstape" placeholder="Doe" required>
                             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <input [(ngModel)]="m.email" type="email" id="email" name="email" placeholder="john@example.com" required>
                             <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
-                            <input type="text" id="adr" name="address" placeholder="Carrera 123 # 45 -67" required>
+                            <input [(ngModel)]="m.direccion" type="text" id="adr" name="address" placeholder="Carrera 123 # 45 -67" required>
                             <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
-                            <input type="text" id="city" name="city" placeholder="Bogotá" required>
+                            <input [(ngModel)]="m.ciudad" type="text" id="city" name="city" placeholder="Bogotá" required>
 
                             <div class="row">
                                 <div class="col-50">
                                     <label for="state">Departamento</label>
-                                    <input type="text" id="state" name="state" placeholder="Bogotá" required>
+                                    <input [(ngModel)]="m.departamento" type="text" id="state" name="state" placeholder="Bogotá" required>
                                 </div>
                                 <div class="col-50">
                                     <label for="telephone">Teléfono</label>
-                                    <input type="text" id="telephone" name="telephone" placeholder="6011234567" required>
+                                    <input [(ngModel)]="m.telefono" type="text" id="telephone" name="telephone" placeholder="6011234567" required>
                                 </div>
                             </div>
                         </div>
@@ -86,15 +89,15 @@
                                 <i class="fa fa-cc-discover" style="color:orange;"></i>
                             </div>
                             <label for="cname">Nombre en tarjeta</label>
-                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                            <input [(ngModel)]="p.nombre" type="text" id="cname" name="cardname" placeholder="John More Doe" required>
                             <label for="ccnum">Número de tarjeta de crédito</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                            <input [(ngModel)]="p.numero" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
                             <label for="expmonth">Vencimiento</label>
-                            <input type="date" id="expmonth" name="expmonth" placeholder="DD/MM/AAAA" required>
+                            <input [(ngModel)]="p.vencimiento" type="date" id="expmonth" name="expmonth" placeholder="DD/MM/AAAA" required>
                             <div class="row">
                                 <div class="col-50">
                                     <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="###" required>
+                                    <input [(ngModel)]="p.cvv" type="text" id="cvv" name="cvv" placeholder="###" required>
                                 </div>
                             </div>
                         </div>
@@ -114,12 +117,12 @@
             <hr>
             <form>
                 <div id="tbodyfooter">
-                    <p>SubTotal <span id="subtotal" class="price itemCartSubTotal" style="color:black"><b>${{total.Subtotal}}</b></span></p>
+                    <p>SubTotal <span [(ngModel)]="r.subTotal" id="subtotal" class="price itemCartSubTotal" style="color:black"><b>${{total.Subtotal}}</b></span></p>
                     <p>Dias <span id="diast" class="price itemCartDias" style="color:black"><b>0</b></span></p>
                     <p>Total <span id="totaldias" class="price itemCartTotalDias" style="color:black"><b>${{total.Subtotal}}</b></span></p>
-                    <p>Multa <span id="multa" class="price itemCartMulta" style="color:black"><b>${{total.Multa}}</b></span></p>
-                    <p>Iva <span id="iva" class="price itemCartIva" style="color:black"><b>${{total.Iva}}</b></span></p>
-                    <p>Total Final <span class="price itemCartTotal" style="color:black"><b>${{total.Total}}</b></span></p>
+                    <p>Multa <span [(ngModel)]="r.multa" id="multa" class="price itemCartMulta" style="color:black"><b>${{total.Multa}}</b></span></p>
+                    <p>Iva <span [(ngModel)]="r.iva" id="iva" class="price itemCartIva" style="color:black"><b>${{total.Iva}}</b></span></p>
+                    <p>Total Final <span [(ngModel)]="r.total" class="price itemCartTotal" style="color:black"><b>${{total.Total}}</b></span></p>
                 </div>
             </form>
         </div>

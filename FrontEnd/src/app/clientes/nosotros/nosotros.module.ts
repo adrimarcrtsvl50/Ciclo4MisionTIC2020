@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { NosotrosRoutingModule } from './nosotros-routing.module';
 import { NosotrosComponent } from './nosotros.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { NosotrosComponent } from './nosotros.component';
   ],
   imports: [
     CommonModule,
-    NosotrosRoutingModule
+    NosotrosRoutingModule,
+    FormsModule,
+    BrowserModule,
+    HttpClientModule
   ]
 })
 export class NosotrosModule { }
