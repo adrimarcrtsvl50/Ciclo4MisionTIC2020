@@ -88,7 +88,9 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
-      this.rou.navigate(["/menu"]);
+      this.items = this.carrito.LimpiarCarrito();
+      this.rou.navigate(["/menu-cli/producto"]);
+      
       
     });
     this.http.post("http://localhost:8081/cards",this.p)
@@ -103,6 +105,9 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
+      this.items = this.carrito.LimpiarCarrito();
+      this.rou.navigate(["/menu-cli/producto"]);
+      
     });
     this.http.post("http://localhost:8081/pos",this.r)
     .subscribe((Res:any)=>{
@@ -116,6 +121,7 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
+      this.rou.navigate(["/menu-cli/producto"]);
     });
     this.http.post("http://localhost:8081/rents",this.s)
     .subscribe((Res:any)=>{
@@ -129,6 +135,8 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
+      this.items = this.carrito.LimpiarCarrito();
+      this.rou.navigate(["/menu-cli/producto"]);
     });
   }
 
