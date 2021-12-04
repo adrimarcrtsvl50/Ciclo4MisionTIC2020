@@ -12,11 +12,11 @@ declare const Swal: any;
 })
 export class CarritoComponent implements OnInit {
   items: any = [];
-  total: any = {
-    Subtotal: "",
-    Iva: "",
-    Multa: "",
-    Total: ""
+  t: any = {
+    subTotal: "",
+    iva: "",
+    multa: "",
+    total: ""
   };
   m: any = {
     apellido: "",
@@ -34,12 +34,9 @@ export class CarritoComponent implements OnInit {
     numero: "",
     vencimiento: ""
   }
-  r:any={
-    iva: "",
-    multa: "",
-    subTotal: "",
-    total: ""
-  }
+ 
+  
+  
   s:any={
     duracionEstimada: 3,
     duracionReal: 0,
@@ -62,20 +59,22 @@ export class CarritoComponent implements OnInit {
     console.log(x)
   }
   carroTotal() {
-    let total = 0;
+    let totales = 0;
     this.items.forEach((item: any) => {
-      total = total + item.precio * item.cantidad;
-
+      totales = totales + item.precio * item.cantidad;
+      
       // console.log("subtotal1",this.total.Subtotal,"precio", item.precio, "cantidad",item.cantidad) 
     })
 
-    this.total.Subtotal = total
-    this.total.Iva = Math.round(total * 0.19);
-    this.total.Multa = Math.round(total * 0.10);
-    this.total.Total = total + this.total.Iva + this.total.Multa;
-    console.log("subtotal", total)
+    this.t.subTotal = totales
+    this.t.iva = Math.round(totales * 0.19);
+    this.t.multa = Math.round(totales * 0.10);
+    this.t.total = totales + this.t.iva + this.t.multa;
+    console.log("subtotal", totales)
+    console.log("sumas",this.t)
   }
   Guardar():void{
+   
     this.http.post("http://localhost:8081/bill",this.m)
     .subscribe((Res:any)=>{
       console.log(Res);
@@ -88,10 +87,7 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
-      this.items = this.carrito.LimpiarCarrito();
-      this.rou.navigate(["/menu-cli/producto"]);
-      
-      
+      this.items = this.carrito.LimpiarCarrito(); 
     });
     this.http.post("http://localhost:8081/cards",this.p)
     .subscribe((Res:any)=>{
@@ -105,11 +101,9 @@ export class CarritoComponent implements OnInit {
         showConfirmButton: false,
         timer: 1000
       })
-      this.items = this.carrito.LimpiarCarrito();
-      this.rou.navigate(["/menu-cli/producto"]);
-      
+      this.items = this.carrito.LimpiarCarrito()
     });
-    this.http.post("http://localhost:8081/pos",this.r)
+    this.http.post("http://localhost:8081/pos",this.t)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");
