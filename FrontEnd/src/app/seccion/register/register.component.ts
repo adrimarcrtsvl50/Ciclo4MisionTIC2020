@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
   Registrar():void{
-    this.http.post ("http://localhost:8081/profiles",this.m)
+    this.http.post ("http://enbike.jelastic.saveincloud.net/profiles",this.m)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");

@@ -22,7 +22,7 @@ export class ConsultarComponent implements OnInit {
 
   }
   listar(): void {
-    this.http.get("http://localhost:8081/bikes", { responseType: "json" })
+    this.http.get("http://enbike.jelastic.saveincloud.net/bikes", { responseType: "json" })
       .subscribe((Res: any) => {
         console.log(Res);
         this.infoConsulta = Res;
@@ -40,7 +40,7 @@ export class ConsultarComponent implements OnInit {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire('Eliminado!', '', 'success');
-        this.http.delete("http://localhost:8081/bikes/" + x)
+        this.http.delete("http://enbike.jelastic.saveincloud.net/bikes/" + x)
           .subscribe((Res: any) => {
             console.log(Res);
             this.listar();

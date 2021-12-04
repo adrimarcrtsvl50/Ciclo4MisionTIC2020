@@ -75,7 +75,7 @@ export class CarritoComponent implements OnInit {
   }
   Guardar():void{
    
-    this.http.post("http://localhost:8081/bill",this.m)
+    this.http.post("http://enbike.jelastic.saveincloud.net/bill",this.m)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");
@@ -89,7 +89,7 @@ export class CarritoComponent implements OnInit {
       })
       this.items = this.carrito.LimpiarCarrito(); 
     });
-    this.http.post("http://localhost:8081/cards",this.p)
+    this.http.post("http://enbike.jelastic.saveincloud.net/cards",this.p)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");
@@ -103,7 +103,7 @@ export class CarritoComponent implements OnInit {
       })
       this.items = this.carrito.LimpiarCarrito()
     });
-    this.http.post("http://localhost:8081/pos",this.t)
+    this.http.post("http://enbike.jelastic.saveincloud.net/pos",this.t)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");
@@ -117,7 +117,7 @@ export class CarritoComponent implements OnInit {
       })
       this.rou.navigate(["/menu-cli/producto"]);
     });
-    this.http.post("http://localhost:8081/rents",this.s)
+    this.http.post("http://enbike.jelastic.saveincloud.net/rents",this.s)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");

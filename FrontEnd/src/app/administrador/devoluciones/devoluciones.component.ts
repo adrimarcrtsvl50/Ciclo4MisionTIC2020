@@ -17,7 +17,7 @@ export class DevolucionesComponent implements OnInit {
     },200)
   }
   listar():void{
-    this.http.get("http://localhost:8081/bikes",{responseType:"json"})
+    this.http.get("http://enbike.jelastic.saveincloud.net/bikes",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.infoConsulta=Res;});

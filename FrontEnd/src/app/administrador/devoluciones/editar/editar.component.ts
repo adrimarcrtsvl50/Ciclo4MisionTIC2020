@@ -26,7 +26,7 @@ export class EditarComponent implements OnInit {
 
   ngOnInit(): void {
     this.m.id = this.rouvar.snapshot.params["x"];
-    this.http.get("http://localhost:8081/bikes/" + this.m.id, { responseType: "json" })
+    this.http.get("http://enbike.jelastic.saveincloud.net/bikes/" + this.m.id, { responseType: "json" })
       .subscribe((Res: any) => {
         console.log(Res);
         this.m.color = Res.color;
@@ -42,7 +42,7 @@ export class EditarComponent implements OnInit {
       });
   }
   Actualizar(){
-    this.http.put ("http://localhost:8081/bikes/"+this.m.id,this.m)
+    this.http.put ("http://enbike.jelastic.saveincloud.net/bikes/"+this.m.id,this.m)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Actualizado satisfactoriamente");

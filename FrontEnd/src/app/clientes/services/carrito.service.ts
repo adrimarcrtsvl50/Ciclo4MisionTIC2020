@@ -11,7 +11,7 @@ export class CarritoSevice {
     items: any = [];
     total: any = [];
     constructor(private http: HttpClient) {
-        this.http.get("http://localhost:8081/bikes", { responseType: "json" })
+        this.http.get("http://enbike.jelastic.saveincloud.net/bikes", { responseType: "json" })
             .subscribe((Res: any) => {
                 console.log(Res);
                 this.Productos = Res;

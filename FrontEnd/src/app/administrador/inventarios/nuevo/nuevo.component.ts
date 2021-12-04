@@ -27,7 +27,7 @@ export class NuevoComponent implements OnInit {
   ngOnInit(): void {
   }
   guardar(): void {
-    this.http.post ("http://localhost:8081/bikes",this.m)
+    this.http.post ("http://enbike.jelastic.saveincloud.net/bikes",this.m)
     .subscribe((Res:any)=>{
       console.log(Res);
       //alert("Registrado satisfactorio");
